@@ -15,7 +15,7 @@ using namespace std;
 // de la lista de codigos activos. Si lo encuentra, lo elimina de la
 // lista (el vehiculo ya salio) y confirma la salida. Si no lo
 // encuentra, avisa que el codigo no es valido, sin modificar nada.
-bool registrarSalida(string codigo, vector<string> &codigosActivos) {
+inline bool registrarSalida(string codigo, vector<string> &codigosActivos) {
     for (char &c : codigo) {
         c = toupper(c);
     }
